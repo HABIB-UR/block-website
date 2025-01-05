@@ -1,7 +1,7 @@
 
 
 
-    export default  {
+     const Habib= {
     name: 'blog',
     title: 'Blog',
     type: 'document',
@@ -53,6 +53,6 @@
     ],
   
   };
-  
+   export default Habib;
 
   
