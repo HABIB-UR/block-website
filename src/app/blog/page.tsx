@@ -9,12 +9,12 @@ export default  async function Blog(){
 
     interface Data{
         title:string;
-        discription:string;
+        description:string;
         image: SanityImageSource;
         currentSlug:string;
     }
   
- const data:Data=await client.fetch(`*[_type=="blog"]{
+ const data:Data[]=await client.fetch(`*[_type=="blog"]{
   title,
   description,
 image,

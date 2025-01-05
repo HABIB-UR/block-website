@@ -1,3 +1,4 @@
+
 import { client } from "@/sanity/lib/client"
 import { urlFor } from "@/sanity/lib/image"
 import { PortableText } from '@portabletext/react';
@@ -9,9 +10,9 @@ import Image from "next/image";
   slug:string,
  }
 
-export default  async function Slug({params:{slug}}:{params:{slug:string} 
+export default  async function Slug({params}:{params:Promise<{slug:string}> 
 }){
-
+   const {slug}= await params;
     const   data= await client.fetch(`*[_type=="blog" && slug.current=='${slug}']{
   image,
   title,
