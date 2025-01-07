@@ -6,9 +6,7 @@ import { PortableText } from '@portabletext/react';
 import Image from "next/image";
 
 
- interface Slug{
-  slug:string,
- }
+ 
 
 export default  async function Slug({params}:{params:Promise<{slug:string}> 
 }){
