@@ -25,14 +25,14 @@ console.log(data)
         <main className="h-screen ">
           <section>
             <div>
-              <h1 className="text-center pt-6 text-3xl font-semibold">Get more information about our hospital.</h1>
+              <h1 className="text-center pt-6 text-xl md:text-3xl font-semibold">Get more information about our hospital.</h1>
             </div>
             <div className="">
-              <Image className=" ml-6 mt-20" width={500} height={500} src={urlFor(data.image).url()} alt="{habib.title}"/>
+              <Image className=" md:ml-6 mt-10 md:mt-20" width={800} height={500} src={urlFor(data.image).url()} alt="{habib.title}"/>
               
             </div>
             <div className=" mt-5 text-2xl ml-10 mb-5 text-blue-700 font-semibold underline"><h1>{data.title}</h1></div>
-            <div>
+            <div className="ml-5 mb-10">
             <PortableText  value={data.content} />
             </div>
             <div>.</div>

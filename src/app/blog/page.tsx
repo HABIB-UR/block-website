@@ -26,13 +26,13 @@ image,
                 <h1 className="font-semibold text-3xl text-center pt-11">Featured Blogs</h1>
                 <p className="text-center mt-2 text-xl">Explore our latest stories and blogs</p>
             </div>
-            <div className="grid grid-cols-2 ml-32 w-4/5 border 2 solid  h-full mr-4 mb-20  mt-10">
+            <div className="grid grid-cols-2 md:ml-32 w-[400px] md:w-4/5 border 2 solid  h-full mr-4 mb-20  mt-10">
             {data.map((habib)=>{
                 return(
                     
                     <div className="" key={habib.title}>
-                            <Image className=" ml-6 mt-3" width={400} height={400} src={urlFor(habib.image).url()} alt="{habib.title}"/>
-                            <h1 className="ml-8 text-blue-400 mt-4">{habib.title}</h1>
+                            <Image className="ml-2  md:ml-6 mt-3" width={400} height={400} src={urlFor(habib.image).url()} alt="{habib.title}"/>
+                            <h1 className="md:ml-8 ml-3 text-blue-400 mt-4">{habib.title}</h1>
                            <p className=" ml-5">{habib.description}</p>
                          
                            

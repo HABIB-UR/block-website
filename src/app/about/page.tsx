@@ -5,10 +5,10 @@ import Image from "next/image"
 export default function About(){
     return(
         <div>
-            <div className="flex">
-                <Image className="mt-5" width={600} height={600} src="/doc-1.jpg"alt="doctor-image"/>
+            <div className=" md:flex">
+                <Image className=" md:mt-5 md:w-[500px] md:ml-0 ml-11  md:h-[500px] w-[400px] md:mr-0 mr-10 h-[200px]" width={600} height={600} src="/doc-1.jpg"alt="doctor-image"/>
                 <div className="">
-                <p className="mt-14 mr-10 ml-3">
+                <p className="mt-14 md:mr-10 md:ml-3">
                     Welcome to <b>Medico AI</b>,One of the first fully AI automated Hospital which provide 
                     computerized scaning of your body that leads to acurate results of body .AI scaning can tell 
                     even minor disease causing virus that is not detected by normal machines,which is also not visible
